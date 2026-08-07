@@ -1,0 +1,28 @@
+## Dataset
+
+**Dataset Source:** [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+
+### Context
+
+According to the World Health Organization (WHO), stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.
+
+This dataset is used to predict whether a patient is likely to get a stroke based on input parameters such as gender, age, various health conditions, and smoking status. Each row in the dataset provides relevant information about an individual patient.
+
+### Attribute Information
+
+| Attribute           | Description                                                                      |
+| ------------------- | -------------------------------------------------------------------------------- |
+| `id`                | Unique identifier                                                                |
+| `gender`            | Patient's gender: Male, Female, or Other                                         |
+| `age`               | Age of the patient                                                               |
+| `hypertension`      | 0 if the patient does not have hypertension, 1 if the patient has hypertension   |
+| `heart_disease`     | 0 if the patient does not have heart disease, 1 if the patient has heart disease |
+| `ever_married`      | Whether the patient has ever been married: No or Yes                             |
+| `work_type`         | Type of employment: children, Govt_job, Never_worked, Private, or Self-employed  |
+| `Residence_type`    | Type of residence: Rural or Urban                                                |
+| `avg_glucose_level` | Average glucose level in blood                                                   |
+| `bmi`               | Body mass index                                                                  |
+| `smoking_status`    | Smoking status: formerly smoked, never smoked, smokes, or Unknown                |
+| `stroke`            | Target variable: 1 if the patient had a stroke, otherwise 0                      |
+
+> **Note:** `Unknown` in `smoking_status` means that the information is unavailable for that patient.
