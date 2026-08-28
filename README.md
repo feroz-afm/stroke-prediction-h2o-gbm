@@ -51,4 +51,4 @@ The project includes:
 
 ## Author
 
-**Md Feroz Ahmed**
+**Md Feroz Ahmed**  
