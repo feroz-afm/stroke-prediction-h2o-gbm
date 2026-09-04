@@ -1,5 +1,4 @@
 # Stroke Risk Prediction with H2O Gradient Boosting
-
 A machine learning project for predicting stroke risk using **H2O Gradient Boosting Machine (GBM)**.
 
 ## Dataset
