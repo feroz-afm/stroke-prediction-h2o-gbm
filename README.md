@@ -129,3 +129,10 @@ pip install -r requirements.txt
 - Add an interactive demo (Streamlit) for single-patient risk.
 
 > ⚠️ This is an educational project, not a medical tool.
+
+## License
+Released under the [MIT License](LICENSE).
+
+## Author
+**Md Feroz Ahmed** — CSE, Pundra University of Science & Technology · AI / ML · Computer Vision
+[GitHub](https://github.com/feroz-afm) · [Kaggle](https://www.kaggle.com/mdferozahmedafm)
