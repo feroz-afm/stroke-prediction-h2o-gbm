@@ -1,53 +1,12 @@
 # Stroke Risk Prediction with H2O Gradient Boosting
-A machine learning project for predicting stroke risk using **H2O Gradient Boosting Machine (GBM)**.
 
-## Dataset
+> Predicting stroke risk from demographic and health data with an **H2O Gradient Boosting Machine**,
+> 5-fold cross-validation, threshold tuning for a strongly imbalanced target, and model interpretation.
 
-**Stroke Prediction Dataset**
-[Kaggle Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
-
-The dataset contains demographic, health, and lifestyle-related information used to predict whether a patient is likely to experience a stroke.
-
-### Features
-
-* Gender
-* Age
-* Hypertension
-* Heart Disease
-* Ever Married
-* Work Type
-* Residence Type
-* Average Glucose Level
-* BMI
-* Smoking Status
-
-**Target:** `stroke`
-
-## Model
-
-**H2O Gradient Boosting Machine (GBM)**
-
-The project includes:
-
-* Data preprocessing
-* Feature engineering
-* Train-test splitting
-* 5-fold cross-validation
-* Model training
-* Threshold analysis
-* Confusion matrix evaluation
-* Model performance analysis
-
-## Technologies
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* H2O.ai
-* Jupyter Notebook
-
-## Author
-
-**Md Feroz Ahmed**  
+<p>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/H2O.ai-GBM-FFE600" />
+  <img src="https://img.shields.io/badge/Task-Binary%20Classification-8E44AD" />
+  <img src="https://img.shields.io/badge/CV%20AUC-0.845-success" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
