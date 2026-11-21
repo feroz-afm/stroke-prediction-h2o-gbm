@@ -120,3 +120,12 @@ pip install -r requirements.txt
    python src/train_gbm.py --data data/healthcare-dataset-stroke-data.csv
    ```
    or open the notebook: `jupyter notebook notebooks/stroke_risk_prediction_h2o_gbm.ipynb`
+
+## Limitations & Future Work
+- With threshold 0.148 the model catches **15 of 65** test strokes (recall 23%) — for medical screening a
+  **lower threshold** (higher recall, more false alarms) would usually be preferred.
+- Try class weights / balancing (`balance_classes=True`), SMOTE, and H2O AutoML.
+- Tune the threshold on a cost basis (missed stroke vs. false alarm).
+- Add an interactive demo (Streamlit) for single-patient risk.
+
+> ⚠️ This is an educational project, not a medical tool.
