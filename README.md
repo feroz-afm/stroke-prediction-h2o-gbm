@@ -89,3 +89,18 @@ More metrics: [`results/metrics.md`](results/metrics.md)
 | Confusion matrix | Predictions on test set |
 |---|---|
 | ![](results/figures/08_confusion_matrix.png) | ![](results/figures/11_predictions_test.png) |
+
+## Project Structure
+```
+├── data/
+│   └── README.md                 # dataset source and attributes (CSV not committed)
+├── notebooks/
+│   └── stroke_risk_prediction_h2o_gbm.ipynb
+├── results/
+│   ├── figures/                  # 11 plots: scoring history, CV, ROC, confusion matrix, predictions
+│   └── metrics.md
+├── src/
+│   └── train_gbm.py              # same pipeline as a script
+├── requirements.txt
+└── README.md
+```
