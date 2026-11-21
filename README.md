@@ -104,3 +104,19 @@ More metrics: [`results/metrics.md`](results/metrics.md)
 ├── requirements.txt
 └── README.md
 ```
+
+## How to Run
+H2O needs **Java 8–17** installed.
+
+```bash
+git clone https://github.com/feroz-afm/stroke-prediction-h2o-gbm.git
+cd stroke-prediction-h2o-gbm
+pip install -r requirements.txt
+```
+
+1. Download `healthcare-dataset-stroke-data.csv` from Kaggle into `data/`
+2. Run the script:
+   ```bash
+   python src/train_gbm.py --data data/healthcare-dataset-stroke-data.csv
+   ```
+   or open the notebook: `jupyter notebook notebooks/stroke_risk_prediction_h2o_gbm.ipynb`
