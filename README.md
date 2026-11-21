@@ -76,3 +76,16 @@ flowchart LR
 | **Actual: stroke** | 50 | 15 |
 
 More metrics: [`results/metrics.md`](results/metrics.md)
+
+## Figures
+| Training scoring history | Cross-validation metrics |
+|---|---|
+| ![](results/figures/01_training_scoring_history.png) | ![](results/figures/02_cross_validation_metrics.png) |
+
+| Training ROC | Test ROC |
+|---|---|
+| ![](results/figures/07_training_roc.png) | ![](results/figures/10_test_roc.png) |
+
+| Confusion matrix | Predictions on test set |
+|---|---|
+| ![](results/figures/08_confusion_matrix.png) | ![](results/figures/11_predictions_test.png) |
