@@ -47,3 +47,16 @@ flowchart LR
 - **Missing BMI is a strong signal:** ~20% of patients with missing BMI had a stroke, versus ~3–5% in most BMI
   ranges — so missing values were encoded as `-99` instead of being filled with the mean.
 - "Ever married" shows 6.6% stroke rate vs 1.7% — mostly an **age effect** (married patients are older).
+
+## Model
+| Parameter | Value |
+|---|---|
+| Algorithm | `H2OGradientBoostingEstimator` |
+| Trees / max depth | 100 / 4 |
+| Learning rate | 0.01 |
+| Min rows per leaf | 10 |
+| Column sample rate | 0.7 |
+| Cross-validation | 5-fold |
+| Early stopping | 10 rounds |
+| Seed | 999 |
+| Decision threshold | **0.148** (tuned so predicted positives ≈ actual positives) |
