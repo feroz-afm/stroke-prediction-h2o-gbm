@@ -1,0 +1,11 @@
+# data and generated files
+data/*.csv
+df_train.csv
+df_test.csv
+h2o_*.log
+*.zip
+
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+venv/
