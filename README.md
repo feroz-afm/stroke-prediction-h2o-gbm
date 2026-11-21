@@ -60,3 +60,19 @@ flowchart LR
 | Early stopping | 10 rounds |
 | Seed | 999 |
 | Decision threshold | **0.148** (tuned so predicted positives ≈ actual positives) |
+
+## Results
+| Metric | Value |
+|---|---:|
+| Cross-validation AUC | **0.845 ± 0.016** |
+| Accuracy @ 0.148 — train / CV / test | 0.940 / 0.921 / **0.932** |
+| Calibration (train) | 184.4 predicted vs 184 actual strokes |
+
+**Test set confusion matrix** (threshold 0.148, 1,520 patients):
+
+| | Pred: no stroke | Pred: stroke |
+|---|---:|---:|
+| **Actual: no stroke** | 1401 | 54 |
+| **Actual: stroke** | 50 | 15 |
+
+More metrics: [`results/metrics.md`](results/metrics.md)
