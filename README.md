@@ -28,3 +28,15 @@ and a tuned decision threshold** instead.
 | `age`, `avg_glucose_level`, `bmi` | `gender`, `hypertension`, `heart_disease`, `ever_married`, `work_type`, `residence_type`, `smoking_status` |
 
 Full attribute table: [`data/README.md`](data/README.md)
+
+## Pipeline
+```mermaid
+flowchart LR
+    A[Raw CSV] --> B[Cleaning<br/>BMI missing → -99]
+    B --> C[EDA<br/>histograms, mosaics, cross-tabs]
+    C --> D[H2O frame<br/>70/30 split]
+    D --> E[GBM + 5-fold CV]
+    E --> F[Threshold tuning<br/>0.148]
+    F --> G[Test evaluation<br/>& calibration]
+    E --> H[Variable importance<br/>& SHAP]
+```
