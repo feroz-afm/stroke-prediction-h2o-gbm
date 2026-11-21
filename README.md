@@ -40,3 +40,10 @@ flowchart LR
     F --> G[Test evaluation<br/>& calibration]
     E --> H[Variable importance<br/>& SHAP]
 ```
+
+## Key Findings from EDA
+- Risk rises clearly with **age** and **average glucose level**.
+- **Hypertension** and **heart disease** strongly increase stroke risk.
+- **Missing BMI is a strong signal:** ~20% of patients with missing BMI had a stroke, versus ~3–5% in most BMI
+  ranges — so missing values were encoded as `-99` instead of being filled with the mean.
+- "Ever married" shows 6.6% stroke rate vs 1.7% — mostly an **age effect** (married patients are older).
